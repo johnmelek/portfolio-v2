@@ -1,100 +1,18 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>John Melek, Forward Deploy Engineer · AI Manager</title>
-<meta name="description" content="John Melek, Forward Deploy Engineer · AI Manager. I make software run at the client site before the meeting ends.">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="icon" href="assets/favicon.png" type="image/png">
-<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/style.css?v=5">
-</head>
-<body data-world="pulse">
-<canvas id="world-canvas"></canvas>
-<div class="blob a"></div><div class="blob b"></div><div class="blob c"></div>
-<main>
-  <section class="hero">
-    <div class="left">
-      <div class="avail">● AVAILABLE FOR DEPLOYMENT</div>
-      <h1 class="display-type">GETTING<br>SOFTWARE <span class="hl">TO RUN</span><br>AT THE SITE.</h1>
-      <p class="lead">I am a forward deploy engineer and AI manager. I walk into broken client integrations, dealership networks, and field offices, and I make the software actually run before the meeting ends. That includes standing up AI where it earns its place: assistants, document and data pipelines, and models wired into the tools your team already uses.</p>
-      <div class="cta">
-        <a class="btn fill" href="work.html">SEE FIELD WORK →</a>
-        <a class="btn" href="contact.html">OPEN A CHANNEL</a>
-      </div>
-    </div>
-    <div class="photo">
-      <div class="photo-frame" data-cursor="that's me">
-        <img src="assets/img/john-melek.jpg" alt="John Melek">
-        <div class="photo-grain"></div>
-        <div class="photo-grain b"></div>
-        <div class="photo-glitch"></div>
-        <div class="photo-tag">ON SITE // 2026</div>
-      </div>
-    </div>
-  </section>
-
-  <div class="marq"><div class="track">
-    <span>RECONCILE</span><span>·</span><span>DEPLOY</span><span>·</span><span>MONITOR</span><span>·</span><span>RECOVER</span><span>·</span><span>SHIP SAME DAY</span><span>·</span><span>ZERO KEYS</span><span>·</span><span>ROOT CAUSE FIRST</span><span>·</span>
-    <span>RECONCILE</span><span>·</span><span>DEPLOY</span><span>·</span><span>MONITOR</span><span>·</span><span>RECOVER</span><span>·</span><span>SHIP SAME DAY</span><span>·</span><span>ZERO KEYS</span><span>·</span><span>ROOT CAUSE FIRST</span><span>·</span>
-  </div></div>
-
-  <section class="sec rv">
-    <div class="metrics">
-      <div class="metric"><div class="v">70<span class="u">+</span></div><div class="k">Sites in range</div></div>
-      <div class="metric"><div class="v">12<span class="u">k</span></div><div class="k">Records recovered</div></div>
-      <div class="metric"><div class="v">0<span class="u"> keys</span></div><div class="k">Required to demo</div></div>
-      <div class="metric"><div class="v">1<span class="u"> day</span></div><div class="k">Typical unblock</div></div>
-    </div>
-  </section>
-
-  <section class="sec inv rv" data-sec="approach">
-    <div class="sec-head"><span class="no">/ APPROACH</span><h2>How the deployment runs</h2></div>
-    <div class="appr">
-      <div class="c"><div class="n">01</div><h3>Proof, not promises</h3><p>Every claim here is measured or drawn from a real engagement. Numbers are recovery counts, site ranges, and rollout windows. None are invented.</p></div>
-      <div class="c"><div class="n">02</div><h3>Local-first, key-free</h3><p>The tools I build run on the client machine with no API key and no cloud dependency. You see them work the same afternoon, then own the code.</p></div>
-      <div class="c"><div class="n">03</div><h3>Safe by default</h3><p>Scoped recon stays local. Rollouts run in waves with one-click rollback. Nothing destructive ships without a verified cause first.</p></div>
-    </div>
-  </section>
-
-  <section class="sec rv" data-sec="fieldlog">
-    <div class="sec-head"><span class="no">/ FIELD LOG</span><h2>Two engagements, root cause first</h2><span class="note">Full case history available on request.</span></div>
-    <div class="case">
-      <div class="top"><span class="id">CASE 001</span><h3>Bulk customer-data recovery across 12 distributed sites</h3></div>
-      <div class="body"><div class="lbl">Situation</div><p>An automotive group's nightly customer-data sync had died. Records stopped flowing between the CRM and the dealerships. Support tickets piled up; nobody had a count of what was missing.</p></div>
-      <div class="body"><div class="lbl">Approach</div><p>Built a reconciliation engine that pulled the three sources (CSV export, REST JSON, legacy dump), matched records by ID, and flagged every field-level conflict with proof of what each side held.</p></div>
-      <div class="body"><div class="lbl">Result</div><p class="res">Recovered <b>1,830</b> records across 12 sites with a 100% match rate on record ID, zero destructive writes, and the nightly batch back to 0 errors.</p></div>
-    </div>
-    <div class="case">
-      <div class="top"><span class="id">CASE 002</span><h3>Real-time gateway stall on a streaming-only upstream</h3></div>
-      <div class="body"><div class="lbl">Situation</div><p>A client gateway had gone silent. Dashboards showed no live data, but the upstream was up and serving.</p></div>
-      <div class="body"><div class="lbl">Approach</div><p>Read the upstream contract instead of guessing. It only speaks Server-Sent Events; the client was requesting a non-streaming response and timing out waiting for a body that never comes.</p></div>
-      <div class="body"><div class="lbl">Result</div><p class="res">Restored streaming with a <b>one-line client change</b>. No sudo, no network change, no downtime.</p></div>
-    </div>
-    <div class="cta" style="margin-top:26px"><a class="btn" href="fieldlog.html">READ THE FULL LOG →</a></div>
-  </section>
-
-  <section class="sec inv rv" data-sec="work">
-    <div class="sec-head"><span class="no">/ FIELD WORK</span><h2>Selected engagements</h2><span class="note">A sample of field work. The full set spans more sectors and sites.</span></div>
-    <div class="work-list">
-      <a class="work-row" href="projects/edgesync.html"><span class="yr">2026</span><span class="ttl">Automotive group, data reconciliation<small>Recovered 1,830 records across 12 dealerships after the incremental sync died.</small></span><span class="arr">→</span></a>
-      <a class="work-row" href="projects/atlasdeploy.html"><span class="yr">2025</span><span class="ttl">Multi-site release, wave orchestration<small>Pushed a version across locations in waves with verified rollback, no full outage.</small></span><span class="arr">→</span></a>
-      <a class="work-row" href="projects/pulse.html"><span class="yr">2025</span><span class="ttl">Client-site uptime monitor<small>Left a live health monitor behind: response time, cert expiry, SSE status.</small></span><span class="arr">→</span></a>
-      <a class="work-row" href="projects/fieldconsole.html"><span class="yr">2024</span><span class="ttl">Fleet ops console<small>Live deploy console with WebSocket status and a streaming log tail.</small></span><span class="arr">→</span></a>
-      <a class="work-row" href="projects/quoteforge.html"><span class="yr">2024</span><span class="ttl">Internal-tool generator<small>Turned a plain sentence into a working single-file app, offline.</small></span><span class="arr">→</span></a>
-      <a class="work-row" href="projects/recon.html"><span class="yr">2023</span><span class="ttl">Scoped recon and surface map<small>Declared-scope recon with safe local scanning, rendered as a graph.</small></span><span class="arr">→</span></a>
-    </div>
-    <div class="cta" style="margin-top:30px"><a class="btn fill" href="projects.html">SEE THE SELECTED SET →</a></div>
-  </section>
-
-  <footer class="foot">
-    <div class="big">Let us <a href="contact.html">build it.</a></div>
-    <div class="meta">John Melek · Forward Deploy Engineer · AI Manager<br>john.melekdls7@gmail.com<br><a href="https://www.linkedin.com/in/john-melek-182086256?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener">LINKEDIN ↗</a> · github.com/johnmelek<br>Selected work, 2021 to present.</div>
-  </footer>
-</main>
-<script src="js/nav.js?v=5"></script>
-<script src="js/main.js?v=5"></script>
-<script src="js/motion.js?v=5"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>John Melek, Forward Deploy Engineer · AI Specialist</title>
+    <meta name="description" content="John Melek. Forward Deploy Engineer · AI Specialist. I get dropped into broken client integrations and ship working software before the meeting ends." />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
