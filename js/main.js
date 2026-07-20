@@ -19,7 +19,8 @@
 
   const btn=document.querySelector('.menu-btn'), ov=document.querySelector('.nav-overlay');
   if(btn&&ov){ btn.addEventListener('click',()=>{ov.classList.toggle('open');btn.textContent=ov.classList.contains('open')?'CLOSE':'MENU';});
-    ov.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{ov.classList.remove('open');btn.textContent='MENU';})); }
+    ov.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{ov.classList.remove('open');btn.textContent='MENU';}));
+    const ret=ov.querySelector('.nav-return'); if(ret) ret.addEventListener('click',()=>{ov.classList.remove('open');btn.textContent='MENU';}); }
 
   const clk=document.querySelector('.clk'); if(clk) setInterval(()=>{clk.textContent=new Date().toISOString().slice(11,19)+' UTC';},1000);
 
