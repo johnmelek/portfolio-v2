@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="JM logo: deploy trajectory and gap launch">
+  <defs><style>
+    .bg{fill:#0a0a0b}
+    .ln{fill:none;stroke:#f4f1ea;stroke-width:24;stroke-linecap:round;stroke-linejoin:round}
+    .traj{fill:none;stroke:#ff4d2e;stroke-width:9;stroke-linecap:round}
+    .acc{fill:#ff4d2e}
+    .hole{fill:#0a0a0b}
+    .node{fill:#ff4d2e}
+  </style></defs>
+  <rect class="bg" width="200" height="200" rx="14"/>
+  <!-- JM heavy initials (correct J with bottom hook) -->
+  <path class="ln" d="M52 44 L52 132 Q52 158 28 158"/>
+  <path class="ln" d="M84 150 L84 44 L112 110 L140 44 L140 150"/>
+  <!-- the deploy trajectory: from J hook, through the gap, out to M apex and beyond -->
+  <path class="traj" d="M28 158 C 42 116, 64 84, 100 58 C 138 32, 168 44, 184 40"/>
+  <path class="acc" d="M184 40 L162 30 L173 52 Z"/>
+  <!-- AI payload riding the trajectory -->
+  <circle class="node" cx="100" cy="58" r="11"/>
+  <circle class="hole" cx="100" cy="58" r="4"/>
+  <!-- THE GAP LAUNCHES: the space between J and M is a launch channel with an AI node rocketing up -->
+  <path class="acc" d="M68 118 L78 86 L62 86 L72 60 L52 90 L68 90 Z"/>
+  <circle class="node" cx="68" cy="86" r="6"/>
+</svg>
