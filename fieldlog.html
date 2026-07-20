@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Field Log, John Melek</title>
+<meta name="description" content="Two field engagements by John Melek, root cause first. Full case history available on request.">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=1"></head>
+<body>
+<div class="blob a"></div><div class="blob b"></div><div class="blob c"></div>
+<main>
+  <section class="sec" style="padding-top:130px">
+    <div class="sec-head"><span class="no">/ FIELD LOG</span><h2>Two engagements, root cause first</h2><span class="note">Full case history available on request.</span></div>
+    <div class="case">
+      <div class="top"><span class="id">CASE 001</span><h3>Bulk customer-data recovery across 12 distributed sites</h3></div>
+      <div class="body"><div class="lbl">Situation</div><p>An automotive group's nightly customer-data sync had died. Records stopped flowing between the CRM and the dealerships. Support tickets piled up; nobody had a count of what was missing.</p></div>
+      <div class="body"><div class="lbl">Approach</div><p>Built a reconciliation engine that pulled the three sources (CSV export, REST JSON, legacy dump), matched records by ID, and flagged every field-level conflict with proof of what each side held.</p></div>
+      <div class="body"><div class="lbl">Result</div><p class="res">Recovered <b>1,830</b> records across 12 sites with a 100% match rate on record ID, zero destructive writes, and the nightly batch back to 0 errors.</p></div>
+    </div>
+    <div class="case">
+      <div class="top"><span class="id">CASE 002</span><h3>Real-time gateway stall on a streaming-only upstream</h3></div>
+      <div class="body"><div class="lbl">Situation</div><p>A client gateway had gone silent. Dashboards showed no live data, but the upstream was up and serving.</p></div>
+      <div class="body"><div class="lbl">Approach</div><p>Read the upstream contract instead of guessing. It only speaks Server-Sent Events; the client was requesting a non-streaming response and timing out waiting for a body that never comes.</p></div>
+      <div class="body"><div class="lbl">Result</div><p class="res">Restored streaming with a <b>one-line client change</b>. No sudo, no network change, no downtime.</p></div>
+    </div>
+  </section>
+  <footer class="foot"><div class="big">Let us <a href="contact.html">build it.</a></div>
+    <div class="meta">John Melek · Forward Deploy Engineer<br>john.melekdls7@gmail.com<br><a href="https://www.linkedin.com/in/john-melek-182086256?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener">LINKEDIN ↗</a> · github.com/johnmelek<br>Selected work, 2021 to present.</div></footer>
+</main>
+<script src="js/nav.js?v=1"></script><script src="js/main.js?v=1"></script>
+</body></html>

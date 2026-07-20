@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EdgeSync, John Melek</title>
+<meta name="description" content="EdgeSync, an on-site data reconciliation engine by John Melek.">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css?v=1">
+<style>body.sk-edgesync{--accent:#22e0ff}</style>
+</head>
+<body class="sk-edgesync">
+<div class="blob a"></div><div class="blob b"></div><div class="blob c"></div>
+<main>
+  <section class="pj">
+    <a class="back" href="../projects.html">← THE SELECTED SET</a>
+    <div class="idx">TOOL 01 / 06</div>
+    <h1>EdgeSync</h1>
+    <div class="sub">On-site data reconciliation engine</div>
+    <p class="desc">Walk into a customer site. Their customer data lives in three places that do not agree: a CSV export, a REST JSON endpoint, and a legacy fixed-width dump. EdgeSync ingests all three, reconciles them by key, and surfaces every field-level conflict with proof. It emits a clean unified dataset and a downloadable CSV through a live console.</p>
+  </section>
+  <div class="pj" style="padding-top:0">
+    <div class="shot">
+      <img src="../assets/shots/edgesync.png" alt="EdgeSync reconciling records across three sources">
+      <div class="cap">Live view. EdgeSync reconciling 12 records across CSV, REST, and legacy sources. Four conflicts surfaced with the exact value each source holds.</div>
+    </div>
+    <div class="pj-grid">
+      <div>
+        <div class="pj-card" style="margin-bottom:20px">
+          <h4>WHAT IT DOES</h4>
+          <div class="kv"><span>Sources</span><span>CSV · REST · legacy</span></div>
+          <div class="kv"><span>Match key</span><span>record ID</span></div>
+          <div class="kv"><span>Conflict view</span><span>field-level, per source</span></div>
+          <div class="kv"><span>Output</span><span>unified JSON + CSV</span></div>
+          <div class="kv"><span>Demo data</span><span>12 records, 4 conflicts</span></div>
+        </div>
+        <div class="pj-card">
+          <h4>STACK</h4>
+          <div class="stackline"><span class="s"><b>Python</b> 3.11</span><span class="s"><b>FastAPI</b></span><span class="s">Uvicorn</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="pj-card" style="margin-bottom:20px">
+          <h4>CONFLICT TABLE (DEMO)</h4>
+          <table class="datagrid">
+            <thead><tr><th>ID</th><th>CSV</th><th>REST</th><th>Legacy</th></tr></thead>
+            <tbody>
+              <tr><td>C002</td><td>a@x.com</td><td class="conflict">b@x.com</td><td>a@x.com</td></tr>
+              <tr><td>C003</td><td class="conflict">0611..</td><td>0612..</td><td>0612..</td></tr>
+              <tr><td>C007</td><td>Paris</td><td class="conflict">Lyon</td><td>Paris</td></tr>
+              <tr><td>C011</td><td class="conflict">active</td><td>closed</td><td>active</td></tr>
+            </tbody>
+          </table>
+          <div class="pj-tags"><span><a href="https://github.com/johnmelek/edgesync">SOURCE REPO →</a></span><span>runs offline</span><span>no key</span></div>
+        </div>
+        <div class="pj-card">
+          <h4>FIELD ORIGIN</h4>
+          <p>Built from the automotive recovery engagement: 1,830 records reconciled across 12 dealerships. The demo dataset is sanitized, but the logic is the same one that matched records by ID with a 100% rate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="foot"><div class="big">Next: <a href="fieldconsole.html">FieldConsole →</a></div>
+    <div class="meta">John Melek · Forward Deploy Engineer<br>john.melekdls7@gmail.com<br><a href="https://www.linkedin.com/in/john-melek-182086256?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener">LINKEDIN ↗</a> · github.com/johnmelek</div></footer>
+</main>
+<script src="../js/nav.js?v=1"></script><script src="../js/main.js?v=1"></script>
+</body></html>
